@@ -30,7 +30,7 @@ function App() {
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
               <a
-                href="https://github.com/dethMastery"
+                href="https://www.instagram.com/katsu.json/"
                 target="_blank"
                 className="w-[50px] h-[50px] hover:scale-90 text-whitesmoke flex justify-center items-center text-2xl rounded-full hover:opacity-60"
                 style={{
@@ -39,6 +39,13 @@ function App() {
                 }}
               >
                 <i className="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://discordid.netlify.app/?id=387465159322632202"
+                target="_blank"
+                className="w-[50px] h-[50px] hover:scale-90 text-whitesmoke bg-[#7289da] flex justify-center items-center text-2xl rounded-full hover:opacity-60"
+              >
+                <i className="fa-brands fa-discord"></i>
               </a>
               <a
                 href="https://github.com/dethMastery"
