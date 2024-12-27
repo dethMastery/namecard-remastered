@@ -30,7 +30,7 @@ function App() {
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
               <a
-                href="https://www.instagram.com/katsu.json/"
+                href="https://www.instagram.com/detzz.in.th/"
                 target="_blank"
                 className="w-[50px] h-[50px] hover:scale-90 text-whitesmoke flex justify-center items-center text-2xl rounded-full hover:opacity-60"
                 style={{
