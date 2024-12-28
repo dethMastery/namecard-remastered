@@ -4,9 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-family: 'IBM Plex Sans Thai', sans-serif;
-  transition: all .3s;
+* {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  transition: all 0.3s;
 }
 
 body {
@@ -17,4 +17,15 @@ body {
   margin: 0;
 
   background: #2e2f2f;
+}
+
+.ig-bg {
+  background: radial-gradient(
+    circle at 10% 107%,
+    rgb(253, 244, 151) 0%,
+    rgb(253, 244, 151) 5%,
+    rgb(253, 89, 73) 45%,
+    rgb(214, 36, 159) 60%,
+    rgb(40, 90, 235) 90%
+  );
 }
