@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 
 export const HomePage = () => {
   const location = useLocation();
-  const [swPath, setSwPath] = useState<string>("");
+
   const [isPhoto, setPhoto] = useState<boolean>(false);
   const [animation, setAnimation] = useState<boolean>(false);
 
@@ -44,12 +44,7 @@ export const HomePage = () => {
         </div>
 
         {/* NavBar */}
-        <Nav
-          pathname={pathName}
-          setAnimation={setAnimation}
-          setSW={setSwPath}
-          sw={swPath}
-        />
+        <Nav pathname={pathName} setAnimation={setAnimation} />
 
         {/* Footer */}
         <div className="fixed bottom-0 left-0 w-full bg-whitesmoke text-jet py-6 text-center text-lg">
