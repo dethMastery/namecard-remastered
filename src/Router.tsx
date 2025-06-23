@@ -9,6 +9,8 @@ export const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/fe6e6f" element={<HomePage />} />
+        <Route path="/photo" element={<HomePage />} />
 
         {/* Error Handling */}
         <Route path="*" element={<ErrorPage />} />
