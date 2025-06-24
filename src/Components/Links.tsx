@@ -1,12 +1,14 @@
+import { linkInterface } from "../Modules/data";
+
 export const Links = ({
   linkType,
   link,
 }: {
   linkType: string;
-  link: string;
+  link: linkInterface | null;
 }) => {
   const linkBase =
-    "w-[50px] h-[50px] hover:scale-90 flex justify-center items-center text-2xl rounded-full hover:opacity-60";
+    "w-[40px] h-[40px] flex justify-center items-center text-xl rounded-full";
 
   let linkLogo = "";
   let linkClass = "";
@@ -28,13 +30,26 @@ export const Links = ({
       linkClass = linkBase + " bg-jet text-whitesmoke";
       linkLogo = "fa-brands fa-github";
       break;
+    case "website":
+      linkClass = linkBase + " bg-jet text-whitesmoke";
+      linkLogo = "fa-solid fa-globe";
+      break;
     default:
       break;
   }
 
   return (
-    <a href={link} target="_blank" className={linkClass}>
-      <i className={linkLogo}></i>
+    <a
+      href={link?.link}
+      target="_blank"
+      className={
+        "flex flex-row justify-center items-center gap-2 hover:opacity-60 hover:scale-90"
+      }
+    >
+      <span className={`${linkClass}`}>
+        <i className={`${linkLogo}`}></i>{" "}
+      </span>{" "}
+      <span className="text-lg">{link?.name}</span>
     </a>
   );
 };

@@ -12,21 +12,21 @@ export const Card = ({
     <div
       className={`${
         animation ? "opacity-0" : ""
-      } min-w-[18rem] max-w-[22rem] bg-whitesmoke text-jet rounded-xl`}
+      } min-w-[18rem] max-w-[22rem] !aspect-[27/43] bg-whitesmoke text-jet rounded-xl`}
     >
-      <div className="p-4">
+      <div>
         <img
           src={data.image}
           alt="profile picture"
-          className="w-[80%] h-auto rounded-full p-2 border-solid border-4 border-living-coral mx-auto hover:border-2 hover:scale-105 hover:p-1"
+          className="w-[100] h-auto mx-auto rounded-t-xl"
         />
       </div>
-      <div className="pb-6">
+      <div className="py-4">
         <div className="mx-auto py-2">
-          <p className="text-3xl w-full text-center mb-2">{data.name}</p>
-          <p className="px-4 text-center opacity-60 mt-2">{data.desp}</p>
+          <p className="px-4 text-3xl w-full text-left mb-2">{data.name}</p>
+          <p className="px-4 text-left opacity-60 mt-2">{data.desp}</p>
         </div>
-        <div className="flex flex-row justify-center py-2 gap-4">
+        <div className="flex flex-col justify-start items-start px-4 py-2 gap-2">
           <Links linkType="fb" link={data.links.facebook} />
           <Links linkType="ig" link={data.links.instagram} />
           {data.links.discord == undefined ? (
@@ -38,6 +38,11 @@ export const Card = ({
             ""
           ) : (
             <Links linkType="github" link={data.links.github} />
+          )}
+          {data.links.website == undefined ? (
+            ""
+          ) : (
+            <Links linkType="website" link={data.links.website} />
           )}
         </div>
       </div>
